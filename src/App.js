@@ -21,12 +21,12 @@ function App() {
       <Routes>
         <Route  path="/" element={<Home />} />
         <Route  path="/about" element={<About />} />
-        <Route  path="/services" element={<Services />} />
-        <Route  path="/services/excel" element={<Excel/>} />
-        <Route  path="/services/power-bi" element={<PowerBI/>} />
-        <Route  path="/services/primavera" element={<Primavera/>} />
-        <Route  path="/services/evm" element={<EVM/>} />
-        <Route  path="/services/ms-project" element={<MsProject/>} />
+        <Route  path="/courses" element={<Services />} />
+        <Route  path="/courses/excel" element={<Excel/>} />
+        <Route  path="/courses/power-bi" element={<PowerBI/>} />
+        <Route  path="/courses/primavera" element={<Primavera/>} />
+        <Route  path="/courses/evm" element={<EVM/>} />
+        <Route  path="/courses/ms-project" element={<MsProject/>} />
         <Route  path="/contact" element={<ContactUs/>} />
       </Routes>
       <Footer/>

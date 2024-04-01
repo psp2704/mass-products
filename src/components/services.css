@@ -1,0 +1,18 @@
+.p-8 {
+    animation-name: transfer;
+    animation-duration: 1500ms;
+    /* animation-delay: 600ms; */
+    animation-iteration-count: 1;
+}
+
+@keyframes transfer {
+    0% {
+        opacity: 0;
+        transform: translateX(500px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(-0px);
+    }
+    
+}

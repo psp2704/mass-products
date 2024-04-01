@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        * {
+            box-sizing: border-box;
+            margin:0px;
+            padding: 0px;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: url('./magic.png');
+        }
+
+        input[type=text]:valid {
+            border : 1px solid rgb(0, 255, 60);
+        }
+
+        input[type=text]:invalid {
+            border : 1px solid rgb(255, 0, 0);
+        }
+        form {
+            padding: 45px;
+           background-color: rgba(206, 206, 206, 0.385);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgb(72, 255, 0);
+            border-radius: 25px;
+        }
+
+        form div {
+            display: flex;
+            flex-direction: column;
+        }
+
+        label {
+            color: white;
+            margin-top: 20px;
+        }
+
+        input {
+            width: 300px;
+            margin-top: 10px;
+            padding: 10px;
+            border-radius: 25px;
+            background-color: rgb(203, 199, 199);
+        }
+
+        button {
+            margin-top: 30px;
+            width: 300px;
+            padding: 8px 20px;
+            border: 1px solid rgb(72, 255, 0);
+            border-radius: 25px;
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <form action="" onsubmit="return validateForm()">
+            <div class="name">
+                <label for="name">Name </label>
+                <input type="text" pattern="[A-Z]{3}-[0-9]{4}" id="name" name="name" >
+            </div>
+            <div>
+                <label for="email">Email </label>
+                <input type="email" id="email" name="email">
+            </div>  
+            <div>
+                <label for="email">Password </label>
+                <input type="email" id="email" name="email">
+            </div>  
+            <button type="submit">Submit</button>  
+        </form>
+
+    </div>
+
+    <script>
+        function validateForm() {
+            var nameInput = document.getElementById("name");
+            if (!nameInput.checkValidity()) {
+                // Input is invalid, display alert message
+                alert("Please enter a valid name (e.g., ABC-1234)");
+                return false; // Prevent form submission
+            }
+            return true; // Allow form submission if input is valid
+        }
+    </script>
+</body>
+</html>

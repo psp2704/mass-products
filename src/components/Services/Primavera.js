@@ -28,7 +28,7 @@ const Primavera = () => {
         <>
 
        <ActivityPage title={data.title}  importance={data.importance} description={data.description} benefits={data.benefits}/>
-        <div className="">
+        {/* <div className="">
             <header className="bg-white shadow">
                 <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
                     <h2 className="text-5xl font-extrabold text-center text-gray-900">Understanding Primavera in Project Management</h2>
@@ -81,7 +81,7 @@ const Primavera = () => {
             </main>
 
            
-        </div>
+        </div> */}
         </>
     );
 }

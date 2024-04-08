@@ -9,6 +9,7 @@ const navigation = [
   { name: 'About', href: '/about', current: false },
    { name: 'Courses', href: '/courses', current: false },
   { name: 'Cotact Us', href: '/contact', current: false },
+  { name: 'Cards', href: '/cards', current: false },
  
 ]
 

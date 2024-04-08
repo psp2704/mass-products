@@ -11,6 +11,7 @@ import Primavera from './components/Services/Primavera';
 import PowerBI from './components/Services/PowerBI';
 import MsProject from './components/Services/MsProject';
 import ContactUs from './components/ContactUs';
+import Cards from './components/Cards';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route  path="/courses/evm" element={<EVM/>} />
         <Route  path="/courses/ms-project" element={<MsProject/>} />
         <Route  path="/contact" element={<ContactUs/>} />
+        <Route  path="/cards" element={<Cards/>} />
       </Routes>
       <Footer/>
     </BrowserRouter>

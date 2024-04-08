@@ -5,7 +5,7 @@ import design1 from '../night.png'
 function Home() {
   return (
     <>
-      <div className=" text-white" style={{backgroundImage : `url(${design1})`}}>
+      <div className="" >
         <header>
           <div className="max-w-7xl mx-auto py-6 px-4 sm:px-6 lg:px-8">
             <h1 className="text-3xl text-center font-bold">Project Management Soft Skills</h1>
@@ -29,17 +29,17 @@ function Home() {
               </div>
               <div className="mt-10">
                 <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                  <div className=" bg-gray-800 p-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold text-white">Resource Library</h3>
-                    <p className="mt-4 text-base text-white">Access a wide range of articles, guides, and tutorials on project management soft skills.</p>
+                  <div className=" bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold ">Resource Library</h3>
+                    <p className="mt-4 text-base ">Access a wide range of articles, guides, and tutorials on project management soft skills.</p>
                   </div>
-                  <div className=" bg-gray-800 p-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold text-white">Interactive Tools</h3>
-                    <p className="mt-4 text-base text-white">Utilize our interactive tools and templates to practice and improve your skills.</p>
+                  <div className=" bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold ">Interactive Tools</h3>
+                    <p className="mt-4 text-base ">Utilize our interactive tools and templates to practice and improve your skills.</p>
                   </div>
-                  <div className=" bg-gray-800 p-8 rounded-lg shadow-lg">
-                    <h3 className="text-xl font-semibold text-white">Community Support</h3>
-                    <p className="mt-4 text-base text-white">Engage with our community of professionals to share insights and best practices.</p>
+                  <div className=" bg-gray-100 p-8 rounded-lg shadow-lg">
+                    <h3 className="text-xl font-semibold ">Community Support</h3>
+                    <p className="mt-4 text-base ">Engage with our community of professionals to share insights and best practices.</p>
                   </div>
                 </div>
               </div>
